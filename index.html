@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisplayFinder: Find Your Desired Monitor Here!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/misc/favicon.ico">
+</head>
+<body>
+
+<header>
+<div class="site_logo"><img src="images/misc/site_logo.png" alt="Site Logo" width="96" height="96"></div>
+<div class="site_name"><h1><span>DisplayFinder</span></h1></div> 
+<div class="navigation">
+<nav>
+<ul>
+<li class="navigation_li"><a href="index.html" class="navigation_a">Home</a></li>
+<li class="navigation_li"><a href="monitor_list.html" class="navigation_a">Monitor List</a></li>
+<li class="navigation_li"><a href="feedback.html" class="navigation_a">Feedback</a></li>
+</ul>
+</nav>
+</div>
+</header>   
+
+<div id="finder_form">
+<form action="">
+<fieldset>
+<legend>Budget</legend>
+<div class="form_elements">
+<input type="radio" name="budget" id="budget" value="$300" />
+<label for="budget">&le; $300</label>
+<input type="radio" name="budget" id="budget" value="$300-$500" />
+<label for="budget">$300-$500</label>
+<input type="radio" name="budget" id="budget" value="$500-$700" />
+<label for="budget">$500-$700</label>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Use Case</legend>
+<div class="form_elements">
+<input type="radio" name="use_case" id="use_case" value="Work" />
+<label for="use_case">Work</label>
+<input type="radio" name="use_case" id="use_case" value="Gaming" />
+<label for="use_case">Gaming</label>  
+<input type="radio" name="use_case" id="use_case" value="Both">
+<label for="use_case">Both</label>  
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Resolution</legend>
+<div class="form_elements">
+<input type="radio" name="resolution" id="resolution" value="FHD" />
+<label for="resolution">FHD (1920x1080p)</label>
+<input type="radio" name="resolution" id="resolution" value="QHD" />
+<label for="resolution">QHD (2560x1440p)</label>
+<input type="radio" name="resolution" id="resolution" value="4K" />
+<label for="resolution">4K (3840x2160p)</label>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Screen Size</legend>
+<div class="form_elements">
+<input type="radio" name="screen_size" id="screen_size" value="24_inches" />
+<label for="screen_size">&le; 24.5 inches</label>
+<input type="radio" name="screen_size" id="screen_size" value="27_inches" />
+<label for="screen_size">27 inches</label>
+<input type="radio" name="screen_size" id="screen_size" value="32_inches" />
+<label for="screen_size">32 inches</label>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Refresh Rate</legend>
+<div class="form_elements">
+<input type="radio" name="refresh_rate" id="refresh_rate" value="60_hz" />
+<label for="refresh_rate">60 Hz/75 Hz</label>
+<input type="radio" name="refresh_rate" id="refresh_rate" value="144_hz" />
+<label for="refresh_rate">144 Hz/165 Hz</label>
+<input type="radio" name="refresh_rate" id="refresh_rate" value="240_hz" />
+<label for="refresh_rate">240 Hz</label>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Do you need an adjustable stand?</legend>
+<div class="form_elements">
+<input type="radio" name="adjustable_stand" id="adjustable_stand" value="yes" />
+<label for="adjustable_stand">Yes</label>
+<input type="radio" name="adjustable_stand" id="adjustable_stand" value="no" />
+<label for="adjustable_stand">No</label>
+</div>
+</fieldset>
+
+<input type="button" value="Search" onclick="search()" id="search_button">
+</form>
+</div>
+
+<h2>Recommendations</h2>
+
+<div class="recommendation1">
+</div>
+
+<div class="recommendation2">
+</div>
+</body>
+</html>

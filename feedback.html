@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/misc/favicon.ico">
+</head>
+<body>
+
+<header>
+<div class="site_logo"><img src="images/misc/site_logo.png" alt="Site Logo" width="96" height="96"></div>
+<div class="site_name"><h1><span>DisplayFinder</span></h1></div> 
+
+<div class="navigation">
+<nav>
+<ul>
+<li class="navigation_li"><a href="index.html" class="navigation_a">Home</a></li>
+<li class="navigation_li"><a href="monitor_list.html" class="navigation_a">Monitor List</a></li>
+<li class="navigation_li"><a href="feedback.html" class="navigation_a">Feedback</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<h1>Feedback</h1>
+<div id="feedback_form">
+<form action="feedback_success.html" method="POST">
+
+<label for="Name" id="Name">Name</label><br>
+<input type="text" name="Name" id="Name"><br>
+
+<label for="Email" id="Email">Email</label><br>
+<input type="email" name="Email" id="Email"><br>
+
+<label for="reason">Select Suggestion Reason</label><br>
+<select name="reason" id="reason">
+    <option value="improve_website">Improve the website</option>
+    <option value="request_monitor">Request a monitor to be added</option>
+    <option value="other">Other</option>
+</select><br>
+
+<label for="suggestion" id="suggestion">Write your suggestions here</label><br>
+<textarea name="suggestion" id="suggestion" cols="50" rows="20"></textarea><br>
+
+<input type="submit">
+</form>
+</div>
+</body>
+</html>
