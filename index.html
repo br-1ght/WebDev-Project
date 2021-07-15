@@ -32,11 +32,11 @@
 <fieldset>
 <legend>Budget</legend>
 <div class="form_elements">
-<input type="radio" name="budget" id="budget" value="$300" />
+<input type="radio" name="budget" id="budget" value="$300" required>
 <label for="budget">&le; $300</label>
-<input type="radio" name="budget" id="budget" value="$300-$500" />
+<input type="radio" name="budget" id="budget" value="$300-$500">
 <label for="budget">$300-$500</label>
-<input type="radio" name="budget" id="budget" value="$500-$700" />
+<input type="radio" name="budget" id="budget" value="$500-$700">
 <label for="budget">$500-$700</label>
 </div>
 </fieldset>
@@ -44,9 +44,9 @@
 <fieldset>
 <legend>Use Case</legend>
 <div class="form_elements">
-<input type="radio" name="use_case" id="use_case" value="Work" />
+<input type="radio" name="use_case" id="use_case" value="Work" required>
 <label for="use_case">Work</label>
-<input type="radio" name="use_case" id="use_case" value="Gaming" />
+<input type="radio" name="use_case" id="use_case" value="Gaming">
 <label for="use_case">Gaming</label>  
 <input type="radio" name="use_case" id="use_case" value="Both">
 <label for="use_case">Both</label>  
@@ -56,11 +56,11 @@
 <fieldset>
 <legend>Resolution</legend>
 <div class="form_elements">
-<input type="radio" name="resolution" id="resolution" value="FHD" />
+<input type="radio" name="resolution" id="resolution" value="FHD" required>
 <label for="resolution">FHD (1920x1080p)</label>
-<input type="radio" name="resolution" id="resolution" value="QHD" />
+<input type="radio" name="resolution" id="resolution" value="QHD">
 <label for="resolution">QHD (2560x1440p)</label>
-<input type="radio" name="resolution" id="resolution" value="4K" />
+<input type="radio" name="resolution" id="resolution" value="4K">
 <label for="resolution">4K (3840x2160p)</label>
 </div>
 </fieldset>
@@ -68,17 +68,17 @@
 <fieldset>
 <legend>Screen Size</legend>
 <div class="form_elements">
-<input type="radio" name="screen_size" id="screen_size" value="24_inches" />
+<input type="radio" name="screen_size" id="screen_size" value="24_inches" required>
 <label for="screen_size">&le; 24.5 inches</label>
-<input type="radio" name="screen_size" id="screen_size" value="27_inches" />
+<input type="radio" name="screen_size" id="screen_size" value="27_inches">
 <label for="screen_size">27 inches</label>
-<input type="radio" name="screen_size" id="screen_size" value="32_inches" />
+<input type="radio" name="screen_size" id="screen_size" value="32_inches">
 <label for="screen_size">32 inches</label>
 </div>
 </fieldset>
 
 <fieldset>
-<legend>Refresh Rate</legend>
+<legend>Refresh Rate (Optional)</legend>
 <div class="form_elements">
 <input type="radio" name="refresh_rate" id="refresh_rate" value="60_hz" />
 <label for="refresh_rate">60 Hz/75 Hz</label>
@@ -92,7 +92,7 @@
 <fieldset>
 <legend>Do you need an adjustable stand?</legend>
 <div class="form_elements">
-<input type="radio" name="adjustable_stand" id="adjustable_stand" value="yes" />
+<input type="radio" name="adjustable_stand" id="adjustable_stand" value="yes" required>
 <label for="adjustable_stand">Yes</label>
 <input type="radio" name="adjustable_stand" id="adjustable_stand" value="no" />
 <label for="adjustable_stand">No</label>

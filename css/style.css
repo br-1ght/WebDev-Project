@@ -238,6 +238,21 @@ fieldset {
     margin-bottom: 10px;
 }
 
+#lazada_button {
+    font-size: 1.5em;
+    padding: 0 10px 10px 10px;
+}
+
+#lazada_button img {
+    width: 32px;
+    height: 32px;
+}
+
+#amazon_button {
+    font-size: 1.5em;
+    padding: 0 10px 10px 10px;
+}
+
 .top_button {
     display: block;
     text-align: center;
@@ -263,6 +278,7 @@ fieldset {
 #suggestion {
     width: 100%;
 }
+
 #feedback_submit {
     display: block;
     margin: 10px auto 10px auto;
