@@ -13,6 +13,7 @@
 </head>
 <body>
 
+<div class="header">
 <header>
 <div class="site_logo"><img src="images/misc/site_logo.png" alt="Site Logo" width="96" height="96"></div>
 <div class="site_name"><h1><span>DisplayFinder</span></h1></div> 
@@ -26,89 +27,94 @@
 </nav>
 </div>
 </header>   
-
-<div id="finder_form">
-<form action="">
-<fieldset>
-<legend>Budget</legend>
-<div class="form_elements">
-<input type="radio" name="budget" id="budget" value="$300" required>
-<label for="budget">&le; $300</label>
-<input type="radio" name="budget" id="budget" value="$300-$500">
-<label for="budget">$300-$500</label>
-<input type="radio" name="budget" id="budget" value="$500-$700">
-<label for="budget">$500-$700</label>
-</div>
-</fieldset>
-
-<fieldset>
-<legend>Use Case</legend>
-<div class="form_elements">
-<input type="radio" name="use_case" id="use_case" value="Work" required>
-<label for="use_case">Work</label>
-<input type="radio" name="use_case" id="use_case" value="Gaming">
-<label for="use_case">Gaming</label>  
-<input type="radio" name="use_case" id="use_case" value="Both">
-<label for="use_case">Both</label>  
-</div>
-</fieldset>
-
-<fieldset>
-<legend>Resolution</legend>
-<div class="form_elements">
-<input type="radio" name="resolution" id="resolution" value="FHD" required>
-<label for="resolution">FHD (1920x1080p)</label>
-<input type="radio" name="resolution" id="resolution" value="QHD">
-<label for="resolution">QHD (2560x1440p)</label>
-<input type="radio" name="resolution" id="resolution" value="4K">
-<label for="resolution">4K (3840x2160p)</label>
-</div>
-</fieldset>
-
-<fieldset>
-<legend>Screen Size</legend>
-<div class="form_elements">
-<input type="radio" name="screen_size" id="screen_size" value="24_inches" required>
-<label for="screen_size">&le; 24.5 inches</label>
-<input type="radio" name="screen_size" id="screen_size" value="27_inches">
-<label for="screen_size">27 inches</label>
-<input type="radio" name="screen_size" id="screen_size" value="32_inches">
-<label for="screen_size">32 inches</label>
-</div>
-</fieldset>
-
-<fieldset>
-<legend>Refresh Rate (Optional)</legend>
-<div class="form_elements">
-<input type="radio" name="refresh_rate" id="refresh_rate" value="60_hz" />
-<label for="refresh_rate">60 Hz/75 Hz</label>
-<input type="radio" name="refresh_rate" id="refresh_rate" value="144_hz" />
-<label for="refresh_rate">144 Hz/165 Hz</label>
-<input type="radio" name="refresh_rate" id="refresh_rate" value="240_hz" />
-<label for="refresh_rate">240 Hz</label>
-</div>
-</fieldset>
-
-<fieldset>
-<legend>Do you need an adjustable stand?</legend>
-<div class="form_elements">
-<input type="radio" name="adjustable_stand" id="adjustable_stand" value="yes" required>
-<label for="adjustable_stand">Yes</label>
-<input type="radio" name="adjustable_stand" id="adjustable_stand" value="no" />
-<label for="adjustable_stand">No</label>
-</div>
-</fieldset>
-
-<input type="button" value="Search" onclick="search()" id="search_button">
-</form>
 </div>
 
-<h2>Recommendations</h2>
+<div class="container">
+    <div class="layout">
+        <div>
+            <form action="">
+            <fieldset class="fieldset">
+            <legend>Budget</legend>
+            <div class="form_elements">
+                <input type="radio" name="budget" id="budget" value="$300" required>
+                <label for="budget">&le; $300</label>
+                <input type="radio" name="budget" id="budget" value="$300-$500">
+                <label for="budget">$300-$500</label>
+                <input type="radio" name="budget" id="budget" value="$500-$700">
+                <label for="budget">$500-$700</label>
+            </div>
+            </fieldset>
 
-<div class="recommendation1">
-</div>
+            <fieldset>
+            <legend>Use Case</legend>
+            <div class="form_elements">
+                <input type="radio" name="use_case" id="use_case" value="Work" required>
+                <label for="use_case">Work</label>
+                <input type="radio" name="use_case" id="use_case" value="Gaming">
+                <label for="use_case">Gaming</label>  
+                <input type="radio" name="use_case" id="use_case" value="Both">
+                <label for="use_case">Both</label>  
+            </div>
+            </fieldset>
 
-<div class="recommendation2">
+            <fieldset>
+            <legend>Resolution</legend>
+            <div class="form_elements">
+                <input type="radio" name="resolution" id="resolution" value="FHD" required>
+                <label for="resolution">FHD (1920x1080p)</label>
+                <input type="radio" name="resolution" id="resolution" value="QHD">
+                <label for="resolution">QHD (2560x1440p)</label>
+                <input type="radio" name="resolution" id="resolution" value="4K">
+                <label for="resolution">4K (3840x2160p)</label>
+            </div>
+            </fieldset>
+
+            <fieldset>
+            <legend>Screen Size</legend>
+            <div class="form_elements">
+                <input type="radio" name="screen_size" id="screen_size" value="24_inches" required>
+                <label for="screen_size">&le; 24.5 inches</label>
+                <input type="radio" name="screen_size" id="screen_size" value="27_inches">
+                <label for="screen_size">27 inches</label>
+                <input type="radio" name="screen_size" id="screen_size" value="32_inches">
+                <label for="screen_size">32 inches</label>
+            </div>
+            </fieldset>
+
+            <fieldset>
+            <legend>Refresh Rate (Optional)</legend>
+            <div class="form_elements">
+                <input type="radio" name="refresh_rate" id="refresh_rate" value="60_hz" />
+                <label for="refresh_rate">60 Hz/75 Hz</label>
+                <input type="radio" name="refresh_rate" id="refresh_rate" value="144_hz" />
+                <label for="refresh_rate">144 Hz/165 Hz</label>
+                <input type="radio" name="refresh_rate" id="refresh_rate" value="240_hz" />
+                <label for="refresh_rate">240 Hz</label>
+            </div>
+            </fieldset>
+
+            <fieldset>
+            <legend>Do you need an adjustable stand?</legend>
+            <div class="form_elements">
+                <input type="radio" name="adjustable_stand" id="adjustable_stand" value="yes" required>
+                <label for="adjustable_stand">Yes</label>
+                <input type="radio" name="adjustable_stand" id="adjustable_stand" value="no" />
+                <label for="adjustable_stand">No</label>
+            </div>
+            </fieldset>
+
+            <input type="button" value="Search" onclick="search()" id="search_button">
+            </form>
+        </div>
+
+        <h2>Recommendations</h2>
+
+        <div class="recommendation">
+        </div>
+
+        <div class="recommendation">
+        </div>
+    </div>
 </div>
 </body>
 </html>
