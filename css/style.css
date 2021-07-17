@@ -4,14 +4,15 @@
     margin: 0;
 }
 
+.container {
+    padding-top: 125px;
+    width: 100%;
+}
+
 .layout {
     background-color: white;
     width: 80%;
     margin: auto;
-}
-
-.container {
-    padding-top: 125px;
 }
 
 /* .dark_mode {
@@ -59,10 +60,6 @@ th {
     left: 10px;
 }
 
-.navigation_li {
-    display: inline;
-}
-
 .navigation {
     list-style-type: none;
     float: right;
@@ -71,7 +68,11 @@ th {
     top: 80px;
 }
 
-.navigation_a {
+.navigation ul li{
+    display: inline;
+}
+
+.navigation ul li a {
     background-color: white;
     padding: 10px 25px 10px 25px;
     text-decoration: none;
@@ -87,7 +88,7 @@ th {
     padding: 15px;
 }
 
-fieldset {
+.fieldset_main {
     margin-bottom: 10px;
 }
 
