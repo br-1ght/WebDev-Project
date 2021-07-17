@@ -36,15 +36,12 @@ th {
 }
 
 /* Header */
-header {
-    background-color: rgb(29, 117, 117);
-    color: rgb(221, 216, 216);
-    height: 125px;
-}
-
 .header {
     position: fixed;
     width: 100%;
+    background-color: rgb(29, 117, 117);
+    color: rgb(221, 216, 216);
+    height: 125px;
 }
 
 .site_logo {
@@ -115,14 +112,7 @@ fieldset {
 }
 
 /* Monitor List */
-#monitor_list_layout {
-    background-color: white;
-    width: 80%;
-    margin: auto;
-}
-
 #monitor_list {
-    margin-top: 10px;
     border-spacing: 0px;
     width: 100%;
 }
@@ -253,12 +243,6 @@ fieldset {
 }
 
 /* Feedback */
-
-#feedback_form {
-    width: 75%;
-    margin: auto;
-}
-
 #Name {
     width: 200px;
     height: 20px;

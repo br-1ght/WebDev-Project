@@ -13,6 +13,7 @@
 </head>
 <body>
 
+<div class="header">
 <header>
 <div class="site_logo"><img src="images/misc/site_logo.png" alt="Site Logo" width="96" height="96"></div>
 <div class="site_name"><h1><span>DisplayFinder</span></h1></div> 
@@ -27,29 +28,34 @@
 </nav>
 </div>
 </header>
+</div>
 
-<h1>Feedback</h1>
-<div id="feedback_form">
-<form action="feedback_success.html" method="POST">
+<div class="container">
+    <div class="layout">
+        <h1>Feedback</h1>
+        <div id="feedback_form">
+            <form action="feedback_success.html" method="POST">
 
-<label for="Name" id="Name">Name</label><br>
-<input type="text" name="Name" id="Name"><br>
+            <label for="Name" id="Name">Name</label><br>
+            <input type="text" name="Name" id="Name"><br>
 
-<label for="Email" id="Email">Email</label><br>
-<input type="email" name="Email" id="Email"><br>
+            <label for="Email" id="Email">Email</label><br>
+            <input type="email" name="Email" id="Email"><br>
 
-<label for="reason">Select Suggestion Reason</label><br>
-<select name="reason" id="reason">
-    <option value="improve_website">Improve the website</option>
-    <option value="request_monitor">Request a monitor to be added</option>
-    <option value="other">Other</option>
-</select><br>
+            <label for="reason">Select Suggestion Reason</label><br>
+            <select name="reason" id="reason">
+                <option value="improve_website">Improve the website</option>
+                <option value="request_monitor">Request a monitor to be added</option>
+                <option value="other">Other</option>
+            </select><br>
 
-<label for="suggestion" id="suggestion">Write your suggestions here</label><br>
-<textarea name="suggestion" id="suggestion" cols="50" rows="20"></textarea><br>
+            <label for="suggestion" id="suggestion">Write your suggestions here</label><br>
+            <textarea name="suggestion" id="suggestion" cols="50" rows="20"></textarea><br>
 
-<input type="submit" id="feedback_submit">
-</form>
+            <input type="submit" id="feedback_submit">
+            </form>
+        </div>
+    </div>
 </div>
 </body>
 </html>
