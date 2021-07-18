@@ -10,25 +10,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/misc/favicon.ico">
+    <script src="js/features.js"></script>
 </head>
+
 <body>
 
-<div class="header">
-    <header>
+<header class="header">
     <div class="site_logo"><img src="images/misc/site_logo.png" alt="Site Logo" width="96" height="96"></div>
-    <div class="site_name"><h1><span>DisplayFinder</span></h1></div> 
+    <div class="site_name"><h1>DisplayFinder</h1></div> 
 
     <div class="navigation">
-    <nav>
-    <ul> 
-    <li><a href="index.html">Home</a></li>
-    <li><a href="monitor_list.html">Monitor List</a></li>
-    <li><a href="feedback.html">Feedback</a></li>
-    </ul>
-    </nav>
+        <nav>
+        <ul> 
+        <li><a href="index.html">Home</a></li>
+        <li><a href="monitor_list.html">Monitor List</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+        </nav>
     </div>
-    </header>
-</div>
+
+    <div class="switch_container">
+        <label class="switch">
+            <p>Dark Mode</p>
+            <input type="checkbox" onclick="darkModeToggle()">
+            <span class="slider round"></span>
+        </label>
+    </div>
+</header>
 
 <div class="container">
     <div class="layout">
