@@ -92,9 +92,9 @@ th {
 /* Dark mode switch */
 .switch_container {
     position: relative;
-    float: right;
-    left: 335px;
+    left: 433px;
     top: 10px;
+    float: right;
 }
 
 .switch {
@@ -330,18 +330,17 @@ input:checked + .slider:before {
 
 .articles_review a {
     text-decoration: none;
-    color: black;
     font-size: 1.1em;
+    color: #0e7949;
 }
 
 .articles_review a:hover {
-    color: #4EAF83;
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
 
 .articles_review span {
-    font-weight: bold;
+    font-weight: 800;
 }
 
 .buy {
@@ -428,5 +427,14 @@ input:checked + .slider:before {
 @media (max-width: 1000px) {
     .flexWrap {
         flex-direction: column;
+        width: 100%;
+    }
+
+    .pros, .cons {
+        width: 100%;
+    }
+
+    .articles_review {
+        margin-left: 0;
     }
 }
