@@ -225,6 +225,26 @@ input:checked + .slider:before {
 .monitor_terms p {
     margin-top: 1.2em;
     margin-bottom: 1.2em;
+} 
+
+#terms_toc {
+    display: inline-block;
+    margin: auto;
+    padding: 10px 20px;
+    border: solid rgb(29, 117, 117);
+}
+
+#terms_toc ul {
+    list-style-type: none;
+}
+
+#terms_toc a {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#terms_toc a:hover {
+    text-decoration: underline;
 }
 
 /* Monitors' Page*/
