@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/misc/favicon.ico">
     <script src="js/features.js"></script>
+    <script src="js/monitor_find.js"></script>
 </head>
 
 <body>
@@ -42,7 +43,7 @@
 <div class="container">
     <div class="layout">
         <div>
-            <form action="">
+            <form>
             <fieldset class="fieldset_main">
             <legend>Budget</legend>
             <div class="form_elements">
@@ -94,18 +95,6 @@
             </fieldset>
 
             <fieldset class="fieldset_main">
-            <legend>Refresh Rate (Optional)</legend>
-            <div class="form_elements">
-                <input type="radio" name="refresh_rate" value="60_hz" />
-                <label for="refresh_rate">60 Hz/75 Hz</label>
-                <input type="radio" name="refresh_rate" value="144_hz" />
-                <label for="refresh_rate">144 Hz/165 Hz</label>
-                <input type="radio" name="refresh_rate" value="240_hz" />
-                <label for="refresh_rate">240 Hz</label>
-            </div>
-            </fieldset>
-
-            <fieldset class="fieldset_main">
             <legend>Do you need an adjustable stand?</legend>
             <div class="form_elements">
                 <input type="radio" name="adjustable_stand" value="yes" required>
@@ -115,21 +104,16 @@
             </div>
             </fieldset>
 
-            <input type="button" value="Search" onclick="search()" id="search_button">
+            <input type="button" value="Search" onclick="monitor_find()" id="search_button">
             </form>
         </div>
 
         <h2>Recommendations</h2>
-
-        <div class="recommendation">
-        </div>
-
-        <div class="recommendation">
-        </div>
+        <div id="recommendations"></div>
     </div>
 </div>
 
-<footer class="footer" style="margin-top: -10px;">
+<footer class="footer">
     <div class="footer_layout">
         <div class="copyright">
             <p>&copy; 2021</p>

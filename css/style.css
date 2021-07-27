@@ -170,6 +170,14 @@ input:checked + .slider:before {
     padding: 15px;
 }
 
+input[type="radio"] {
+    vertical-align: middle;
+}
+
+.form_elements label {
+    vertical-align: middle;
+}
+
 .fieldset_main {
     margin-bottom: 10px;
 }
@@ -188,7 +196,7 @@ input:checked + .slider:before {
     font-weight: bold;
 }
 
-.recommendation {
+.recommendation_item {
     border: 2px solid;
     height: 200px;
     margin: 10px auto 10px auto;
@@ -232,6 +240,14 @@ input:checked + .slider:before {
     margin: auto;
     padding: 10px 20px;
     border: solid rgb(29, 117, 117);
+    margin-bottom: 10px;
+}
+
+#terms_toc span {
+    text-align: center;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 800;
 }
 
 #terms_toc ul {
