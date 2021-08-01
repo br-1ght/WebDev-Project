@@ -196,10 +196,11 @@ input[type="radio"] {
     font-weight: bold;
 }
 
-.recommendation_item {
+#recommendation_item {
     border: 2px solid;
     height: 200px;
-    margin: 10px auto 10px auto;
+    margin: 10px auto 0 auto;
+    display: none;
 }
 
 /* Monitor List */
