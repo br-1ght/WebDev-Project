@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/misc/favicon.ico">
     <script src="js/features.js"></script>
+    <script src="js/monitor_find.js"></script>
 </head>
 
 <body>
@@ -60,12 +61,10 @@
             <fieldset class="fieldset_main">
             <legend>Use Case</legend>
             <div class="form_elements">
-                <input type="radio" name="use_case" value="work" required>
+                <input type="checkbox" name="use_case" value="work" id="workCheck" required>
                 <label for="use_case">Work</label>
-                <input type="radio" name="use_case" value="gaming">
+                <input type="checkbox" name="use_case" value="gaming" id="gamingCheck">
                 <label for="use_case">Gaming</label>  
-                <input type="radio" name="use_case" value="both">
-                <label for="use_case">Both</label>  
             </div>
             </fieldset>
 
@@ -108,8 +107,9 @@
         </div>
 
         <h2>Recommendations</h2>
-        <div id="recommendations"></div>
-        <div id="recommendation_item"></div>
+        <div id="recommendations">
+
+        </div>
     </div>
 </div>
 
@@ -127,6 +127,5 @@
         </div>        
     </div>
 </footer>
-<script src="js/monitor_find.js"></script>
 </body>
 </html>

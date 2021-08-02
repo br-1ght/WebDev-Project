@@ -2,7 +2,7 @@
     {
         "model": "AOC-24G2",
         "budget": 1,
-        "useCase": "gaming",
+        "useCase": ["gaming"],
         "resolution": "FHD",
         "screenSize": "24_inches",
         "adjustableStand": "yes"
@@ -10,7 +10,7 @@
     {
         "model": "LG-27GL850",
         "budget": 3,
-        "useCase": "both",
+        "useCase": ["work", "gaming"],
         "resolution": "QHD",
         "screenSize": "27_inches",
         "adjustableStand": "yes"
@@ -18,7 +18,7 @@
     {
         "model": "Acer-SB220Q",
         "budget": 1,
-        "useCase": "work",
+        "useCase": ["work"],
         "resolution": "FHD",
         "screenSize": "24_inches",
         "adjustableStand": "no"
@@ -26,7 +26,7 @@
     {
         "model": "BenQ-ZOWIE-XL2546K",
         "budget": 4,
-        "useCase": "gaming",
+        "useCase": ["gaming"],
         "resolution": "FHD",
         "screenSize": "24_inches",
         "adjustableStand": "yes"
@@ -34,7 +34,7 @@
     {
         "model": "LG-27GN950",
         "budget": 4,
-        "useCase": "both",
+        "useCase": ["work", "gaming"],
         "resolution": "4K",
         "screenSize": "27_inches",
         "adjustableStand": "yes"
@@ -42,15 +42,15 @@
     {
         "model": "PRISM-F270i-Pro",
         "budget": 2,
-        "useCase": "gaming",
+        "useCase": ["gaming"],
         "resolution": "QHD",
         "screenSize": "27_inches",
         "adjustableStand": "no"
     },
     {
-        "model": "Dell-2721DS",
+        "model": "Dell-S2721DS",
         "budget": 2,
-        "useCase": "work",
+        "useCase": ["work"],
         "resolution": "QHD",
         "screenSize": "27_inches",
         "adjustableStand": "yes"
@@ -58,7 +58,7 @@
     {
         "model": "LG-27UL600-W",
         "budget": 2,
-        "useCase": "work",
+        "useCase": ["work"],
         "resolution": "4K",
         "screenSize": "27_inches",
         "adjustableStand": "no"
@@ -66,7 +66,7 @@
     {
         "model": "ViewSonic-XG2705",
         "budget": 2,
-        "useCase": "gaming",
+        "useCase": ["gaming"],
         "resolution": "FHD",
         "screenSize": "27_inches",
         "adjustableStand": "Yes"
@@ -74,7 +74,7 @@
     {
         "model": "ViewSonic-VX3276-2K-MHD",
         "budget": 2,
-        "useCase": "work",
+        "useCase": ["work"],
         "resolution": "FHD",
         "screenSize": "24_inches",
         "adjustableStand": "Yes"

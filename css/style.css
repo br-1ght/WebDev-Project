@@ -13,8 +13,12 @@
     min-height: calc(100vh - 125px - 80px);
 }
 
+.container a {
+    color: black;
+}
+
 .layout {
-    width: 80%;
+    width: 70%;
     margin: auto;
     height: 100%;
 }
@@ -24,6 +28,10 @@
     color: white;
     width: 100%;
 } 
+
+.dark_mode a {
+   color: white; 
+}
 
 h1 {
     text-align: center;
@@ -170,7 +178,7 @@ input:checked + .slider:before {
     padding: 15px;
 }
 
-input[type="radio"] {
+input[type="radio"], input[type="checkbox"] {
     vertical-align: middle;
 }
 
@@ -182,7 +190,7 @@ input[type="radio"] {
     margin-bottom: 10px;
 }
 
-.form_elements input[type="radio"] {
+.form_elements input[type="radio"], .form_elements input[type="checkbox"] {
     margin-left: 10px;
     width: 18px;
     height: 18px;
@@ -196,14 +204,29 @@ input[type="radio"] {
     font-weight: bold;
 }
 
-#recommendation_item {
+.recommendation_item {
     border: 2px solid;
     height: 200px;
     margin: 10px auto 0 auto;
-    display: none;
+    display: flex;
+}
+
+.recommendation_item a {
+    display: block;
+    height: 38px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    text-decoration: none;
 }
 
 /* Monitor List */
+#monitor_list_layout {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+
 #monitor_list {
     border-spacing: 0px;
     width: 100%;
@@ -236,6 +259,11 @@ input[type="radio"] {
     margin-bottom: 1.2em;
 } 
 
+.monitor_terms img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 #terms_toc {
     display: inline-block;
     margin: auto;
@@ -264,6 +292,37 @@ input[type="radio"] {
     text-decoration: underline;
 }
 
+#ergo_examples {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ergo_examples figcaption{
+    width: 225px;
+}
+
+.img_source {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#topBtn {
+    position: fixed;
+    display: block;
+    right: 20px;
+    bottom: 10px;
+    border: 0;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: rgb(29, 117, 117);
+    color: white;
+    cursor: pointer;
+    z-index: 99;
+}
+
+#topBtn:hover {
+    background-color: rgb(19, 59, 59);
+}
 /* Monitors' Page*/
 .monitor_image {
     display: block;
@@ -373,7 +432,6 @@ input[type="radio"] {
 
 .articles_review a:hover {
     text-decoration: underline;
-    text-decoration-thickness: 2px;
 }
 
 .articles_review span {
@@ -381,7 +439,6 @@ input[type="radio"] {
 }
 
 .buy {
-    margin-bottom: 30px;
     height: 100px;
     text-align: center;
 }
@@ -460,18 +517,3 @@ input[type="radio"] {
    margin-right: 40px; 
 }
 
-/* Responsive */
-@media (max-width: 1000px) {
-    .flexWrap {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .pros, .cons {
-        width: 100%;
-    }
-
-    .articles_review {
-        margin-left: 0;
-    }
-}
