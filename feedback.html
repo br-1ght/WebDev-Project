@@ -42,26 +42,26 @@
 <div class="container">
     <div class="layout">
         <h1>Feedback</h1>
-        <div id="feedback_form">
-            <form action="feedback_success.html" method="POST">
+        <div >
+            <form method="GET" id="feedback_form">
 
-            <label for="Name" id="Name">Name</label><br>
-            <input type="text" name="Name" id="Name"><br>
+            <label for="Name">Name</label><br>
+            <input type="text" name="Name" id="Name" required><br>
 
-            <label for="Email" id="Email">Email</label><br>
-            <input type="email" name="Email" id="Email"><br>
+            <label for="Email">Email</label><br>
+            <input type="email" name="Email" id="Email" required><br>
 
-            <label for="reason">Select Suggestion Reason</label><br>
-            <select name="reason" id="reason">
+            <label for="reason">Select Feedback Reason</label><br>
+            <select name="reason" id="reason" required>
                 <option value="improve_website">Improve the website</option>
                 <option value="request_monitor">Request a monitor to be added</option>
                 <option value="other">Other</option>
             </select><br>
 
-            <label for="suggestion" id="suggestion">Write your suggestions here</label><br>
-            <textarea name="suggestion" id="suggestion" cols="50" rows="20"></textarea><br>
+            <label for="suggestion">Write your feedback here</label><br>
+            <textarea name="suggestion" id="suggestion" cols="50" rows="20" required></textarea><br>
 
-            <input type="submit" id="feedback_submit">
+            <button type="submit" id="feedback_submit">Submit</button>
             </form>
         </div>
     </div>
@@ -83,6 +83,7 @@
 </footer>
 
 <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
 <script src="js/feedback.js"></script>
 </body>
 </html>

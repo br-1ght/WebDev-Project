@@ -41,7 +41,6 @@ table {
     text-align: center;
 }
 
-
 th {
     background-color: rgb(29, 117, 117);
     color:white;
@@ -91,6 +90,7 @@ th {
     padding: 10px 25px 10px 25px;
     text-decoration: none;
     border-radius: 15px;
+    color: black;
 }
 
 .navigation ul li a:hover {
@@ -173,7 +173,44 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/* Alert Rectangle Box */
+.info_alert {
+    padding: 20px;
+    background-color: darkcyan;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+
 /* Main Page */
+#finder_form legend {
+    background-color: rgba(69, 106, 175, 0.6);
+    padding: 4px 6px;
+    border-radius: 10px;
+}
+
+#finder_form fieldset {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
 .form_elements {
     padding: 15px;
 }
@@ -184,10 +221,6 @@ input[type="radio"], input[type="checkbox"] {
 
 .form_elements label {
     vertical-align: middle;
-}
-
-.fieldset_main {
-    margin-bottom: 10px;
 }
 
 .form_elements input[type="radio"], .form_elements input[type="checkbox"] {
@@ -202,6 +235,7 @@ input[type="radio"], input[type="checkbox"] {
     padding: 20px 100px 20px 100px;
     font-size: 1.5em;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .recommendation_item {
@@ -214,10 +248,22 @@ input[type="radio"], input[type="checkbox"] {
 .recommendation_item a {
     display: block;
     height: 38px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 10px;
+    margin: auto 10px auto 10px;
     text-decoration: none;
+}
+
+.recommendation_item a:hover {
+    color: cornflowerblue;
+}
+
+.recommendation_spec_list {
+    display: block;
+    height: 114px;
+    margin: auto 10px auto 10px;
+}
+
+.recommendation_spec_list li {
+    list-style-type: none;
 }
 
 /* Monitor List */
@@ -245,7 +291,10 @@ input[type="radio"], input[type="checkbox"] {
 .model a {
     text-decoration: none;
     font-weight: bold;
+}
 
+.model a:hover {
+    color: cornflowerblue;
 }
 
 .model:hover {
@@ -253,17 +302,26 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 /* Monitor Terms Page */
-
-.monitor_terms p {
+.monitor_terms_body p {
     margin-top: 1.2em;
     margin-bottom: 1.2em;
 } 
 
-.monitor_terms img {
+.monitor_terms_body img {
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
+
+.monitor_terms_body a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+.monitor_terms_body a:hover {
+    text-decoration: underline;
+}
+
 #terms_toc {
     display: inline-block;
     margin: auto;
@@ -281,15 +339,6 @@ input[type="radio"], input[type="checkbox"] {
 
 #terms_toc ul {
     list-style-type: none;
-}
-
-#terms_toc a {
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-#terms_toc a:hover {
-    text-decoration: underline;
 }
 
 #ergo_examples {
@@ -323,6 +372,7 @@ input[type="radio"], input[type="checkbox"] {
 #topBtn:hover {
     background-color: rgb(19, 59, 59);
 }
+
 /* Monitors' Page*/
 .monitor_image {
     display: block;
@@ -427,7 +477,6 @@ input[type="radio"], input[type="checkbox"] {
 .articles_review a {
     text-decoration: none;
     font-size: 1.1em;
-    color: #0e7949;
 }
 
 .articles_review a:hover {
@@ -496,6 +545,12 @@ input[type="radio"], input[type="checkbox"] {
     padding: 20px 100px 20px 100px;
     font-size: 1.5em;
     font-weight: bold;
+    cursor: pointer;
+}
+
+#feedback_success {
+    display: block;
+    text-align: center;
 }
 
 /* Footer */ 

@@ -2,81 +2,101 @@
     {
         "model": "AOC-24G2",
         "budget": 1,
-        "useCase": ["gaming"],
+        "useCase": ["Gaming"],
         "resolution": "FHD",
-        "screenSize": "24_inches",
-        "adjustableStand": "yes"
+        "screenSize": "24 inches",
+        "adjustableStand": "Yes",
+        "price": "S$289",
+        "refreshRate": "144 Hz"
     },
     {
         "model": "LG-27GL850",
         "budget": 3,
-        "useCase": ["work", "gaming"],
+        "useCase": ["Work", "Gaming"],
         "resolution": "QHD",
-        "screenSize": "27_inches",
-        "adjustableStand": "yes"
+        "screenSize": "27 inches",
+        "adjustableStand": "Yes",
+        "price": "S$679",
+        "refreshRate": "144 Hz"
     },
     {
         "model": "Acer-SB220Q",
         "budget": 1,
-        "useCase": ["work"],
+        "useCase": ["Work"],
         "resolution": "FHD",
-        "screenSize": "24_inches",
-        "adjustableStand": "no"
+        "screenSize": "24 inches",
+        "adjustableStand": "No",
+        "price": "S$150",
+        "refreshRate": "75 Hz"
     },
     {
         "model": "BenQ-ZOWIE-XL2546K",
         "budget": 4,
-        "useCase": ["gaming"],
+        "useCase": ["Gaming"],
         "resolution": "FHD",
-        "screenSize": "24_inches",
-        "adjustableStand": "yes"
+        "screenSize": "24 inches",
+        "adjustableStand": "Yes",
+        "price": "S$799",
+        "refreshRate": "240 Hz"
     },
     {
         "model": "LG-27GN950",
         "budget": 4,
-        "useCase": ["work", "gaming"],
+        "useCase": ["Work", "Gaming"],
         "resolution": "4K",
-        "screenSize": "27_inches",
-        "adjustableStand": "yes"
+        "screenSize": "27 inches",
+        "adjustableStand": "Yes",
+        "price": "S$1300",
+        "refreshRate": "144 Hz"
     },
     {
         "model": "PRISM-F270i-Pro",
         "budget": 2,
-        "useCase": ["gaming"],
+        "useCase": ["Gaming"],
         "resolution": "QHD",
-        "screenSize": "27_inches",
-        "adjustableStand": "no"
+        "screenSize": "27 inches",
+        "adjustableStand": "No",
+        "price": "S$469",
+        "refreshRate": "144 Hz"
     },
     {
         "model": "Dell-S2721DS",
         "budget": 2,
-        "useCase": ["work"],
+        "useCase": ["Work"],
         "resolution": "QHD",
-        "screenSize": "27_inches",
-        "adjustableStand": "yes"
+        "screenSize": "27 inches",
+        "adjustableStand": "Yes",
+        "price": "S$489",
+        "refreshRate": "144 Hz"
     },
     {
         "model": "LG-27UL600-W",
         "budget": 2,
-        "useCase": ["work"],
+        "useCase": ["Work"],
         "resolution": "4K",
-        "screenSize": "27_inches",
-        "adjustableStand": "no"
+        "screenSize": "27 inches",
+        "adjustableStand": "No",
+        "price": "S$499",
+        "refreshRate": "144 Hz"
     },
     {
         "model": "ViewSonic-XG2705",
         "budget": 2,
-        "useCase": ["gaming"],
+        "useCase": ["Gaming"],
         "resolution": "FHD",
-        "screenSize": "27_inches",
-        "adjustableStand": "Yes"
+        "screenSize": "27 inches",
+        "adjustableStand": "Yes",
+        "price": "S$429",
+        "refreshRate": "144 Hz"
     },
     {
         "model": "ViewSonic-VX3276-2K-MHD",
         "budget": 2,
-        "useCase": ["work"],
-        "resolution": "FHD",
-        "screenSize": "24_inches",
-        "adjustableStand": "Yes"
+        "useCase": ["Work"],
+        "resolution": "QHD",
+        "screenSize": "32 inches",
+        "adjustableStand": "No",
+        "price": "S$480",
+        "refreshRate": "75 Hz"
     }
 ]

@@ -10,8 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/misc/favicon.ico">
-    <script src="js/features.js"></script>
-    <script src="js/monitor_find.js"></script>
 </head>
 
 <body>
@@ -42,12 +40,17 @@
 
 <div class="container">
     <div class="layout">
-        <div>
+        <div class="info_alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            New to monitors and don't know which options to pick? <a href="monitor_terms_explained.html" style="color: white;">Click on this guide which can help you to consider what features you want in a monitor.</a>
+        </div>
+        <h1>Search for your desired monitor here!</h1>
+        <div id="finder_form">
             <form>
-            <fieldset class="fieldset_main">
+            <fieldset>
             <legend>Budget</legend>
             <div class="form_elements">
-                <input type="radio" name="budget" value="1" required>
+                <input type="radio" name="budget" value="1">
                 <label for="budget">&le; $300</label>
                 <input type="radio" name="budget" value="2">
                 <label for="budget">$300-$500</label>
@@ -58,46 +61,46 @@
             </div>
             </fieldset>
 
-            <fieldset class="fieldset_main">
+            <fieldset>
             <legend>Use Case</legend>
             <div class="form_elements">
-                <input type="checkbox" name="use_case" value="work" id="workCheck" required>
+                <input type="checkbox" name="use_case" value="Work" id="workCheck">
                 <label for="use_case">Work</label>
-                <input type="checkbox" name="use_case" value="gaming" id="gamingCheck">
+                <input type="checkbox" name="use_case" value="Gaming" id="gamingCheck">
                 <label for="use_case">Gaming</label>  
             </div>
             </fieldset>
 
-            <fieldset class="fieldset_main">
+            <fieldset>
             <legend>Resolution</legend>
             <div class="form_elements">
-                <input type="radio" name="resolution" value="FHD" required>
-                <label for="resolution">FHD (1920x1080p)</label>
+                <input type="radio" name="resolution" value="FHD">
+                <label for="resolution">FHD (1920x1080)</label>
                 <input type="radio" name="resolution" value="QHD">
-                <label for="resolution">QHD (2560x1440p)</label>
+                <label for="resolution">QHD (2560x1440)</label>
                 <input type="radio" name="resolution" value="4K">
-                <label for="resolution">4K (3840x2160p)</label>
+                <label for="resolution">4K (3840x2160)</label>
             </div>
             </fieldset>
 
-            <fieldset class="fieldset_main">
+            <fieldset>
             <legend>Screen Size</legend>
             <div class="form_elements">
-                <input type="radio" name="screen_size" value="24_inches" required>
+                <input type="radio" name="screen_size" value="24 inches">
                 <label for="screen_size">&le; 24.5 inches</label>
-                <input type="radio" name="screen_size" value="27_inches">
+                <input type="radio" name="screen_size" value="27 inches">
                 <label for="screen_size">27 inches</label>
-                <input type="radio" name="screen_size" value="32_inches">
+                <input type="radio" name="screen_size" value="32 inches">
                 <label for="screen_size">32 inches</label>
             </div>
             </fieldset>
 
-            <fieldset class="fieldset_main">
+            <fieldset>
             <legend>Do you need an adjustable stand?</legend>
             <div class="form_elements">
-                <input type="radio" name="adjustable_stand" value="yes" required>
+                <input type="radio" name="adjustable_stand" value="Yes">
                 <label for="adjustable_stand">Yes</label>
-                <input type="radio" name="adjustable_stand" value="no" />
+                <input type="radio" name="adjustable_stand" value="No">
                 <label for="adjustable_stand">No</label>
             </div>
             </fieldset>
@@ -127,5 +130,7 @@
         </div>        
     </div>
 </footer>
+<script src="js/features.js"></script>
+<script src="js/monitor_find.js"></script>
 </body>
 </html>
