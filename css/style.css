@@ -204,6 +204,7 @@ input:checked + .slider:before {
     background-color: rgba(69, 106, 175, 0.6);
     padding: 4px 6px;
     border-radius: 10px;
+    margin-left: 25px;
 }
 
 #finder_form fieldset {
@@ -258,7 +259,7 @@ input[type="radio"], input[type="checkbox"] {
 
 .recommendation_spec_list {
     display: block;
-    height: 114px;
+    max-height: 150px;
     margin: auto 10px auto 10px;
 }
 
@@ -524,20 +525,32 @@ input[type="radio"], input[type="checkbox"] {
     text-align: center;
 }
 
-/* Feedback */
+/* Feedback & Feedback success */
 #Name {
-    width: 200px;
+    width: 40%;
     height: 20px;
+    padding: 5px 10px;
+    font-size: 1.2em;
 }
 
 #Email {
-    width: 200px;
+    width: 40%;
     height: 20px;
+    padding: 5px 10px;
+    font-size: 1.2em;
+}
+
+#reason {
+    padding: 5px 10px;
+    font-size: 1.2em;
 }
 
 #suggestion {
     width: 100%;
+    font-size: 1.2em;
+    padding: 5px;
 }
+
 
 #feedback_submit {
     display: block;
@@ -553,8 +566,15 @@ input[type="radio"], input[type="checkbox"] {
     text-align: center;
 }
 
-/* Footer */ 
+.feedback_form_field {
+    margin: 10px auto 10px auto;
+}
 
+.feedback_form_field label {
+    font-weight: 700;
+}
+
+/* Footer */ 
 .footer {
     background-color: #2A9280;
     height: 80px;

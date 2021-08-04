@@ -1,4 +1,6 @@
+// Monitor search function for index.html
 function monitor_search() {
+    // AJAX request
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "json/monitors.json");
     xhr.onload = function() {
@@ -6,13 +8,13 @@ function monitor_search() {
             let monitorData = JSON.parse(xhr.responseText);
 
             let recommendations = document.getElementById("recommendations");
-            recommendations.innerHTML = "" // Clear all the recommendations if user wants to search again
+            recommendations.innerHTML = "" // Clear all the previous recommendations if user wants to search again
 
-            /* Get data from user's input */
+            // Get data from user's input 
             let search_form = document.forms[0]; 
             let budget = search_form.budget.value;
 
-            let useCase = [];
+            let useCase = []; // useCase is an array so that if the user picks both gaming and work options, it will store 2 values
             if (document.getElementById("workCheck").checked) {
                 useCase.push(document.getElementById("workCheck").value)
             }
@@ -58,13 +60,15 @@ function monitor_search() {
             let userChoiceObj = new userChoice(budget, useCase, resolution, screenSize, adjustableStand);
             console.log(userChoiceObj);
             
-            // Match user's inputs to the monitors specifications
-            var matches = []
+            // Compare user's inputs to the monitors specifications and then match count will increase if user input matches the same as the monitors
+            var matches = [] // To store match results, also indexes of the array is correlated to indexes of the monitor data
             for (i=0; i < monitorData.length; i++) { 
                matchCount = 0
                if (userChoiceObj.budget >= monitorData[i].budget) {
                    matchCount += 1
                }
+               /* Match count numbers for each use case have these values so that match results are distinguishable
+               e.g any monitor that has a match count of 100+ is a work monitor, 200+ is gaming monitor and 300+ is both a gaming and work monitor */
                for (j = 0; j < userChoiceObj.useCase.length; j++) { 
                    if (userChoiceObj.useCase[j] === monitorData[i].useCase[j] && monitorData[i].useCase[j] === "Work") {
                        matchCount += 100
@@ -90,6 +94,7 @@ function monitor_search() {
                matches.push(matchCount)
             }
             console.log(matches)
+            // Get suitable results
             let highestMatch = Math.max.apply(null, matches) // Find the number of the highest match count
             let indexesOfHighest = [] // Since there could be multiple monitors that can have the highest match count, store the index in an array
             for (i=0; i< matches.length; i++) {
@@ -99,7 +104,10 @@ function monitor_search() {
             }
             console.log(indexesOfHighest)
             
-            for (i = 0; i < indexesOfHighest.length; i++) { // Showing the recommendations
+            // Showing the recommendations
+            for (i = 0; i < indexesOfHighest.length; i++) { 
+
+                // Monitor specification details
                 let recoModel = monitorData[indexesOfHighest[i]].model // monitor name for anchor link and image
                 let recoModelName = recoModel.replaceAll("-", " ") // Display the monitor name without the dashes(-)
                 let recoModelUseCase = monitorData[indexesOfHighest[i]].useCase
@@ -108,12 +116,15 @@ function monitor_search() {
                 let recoModelSize = monitorData[indexesOfHighest[i]].screenSize
                 let recoModelPrice = monitorData[indexesOfHighest[i]].price
                 let recoModelAS = monitorData[indexesOfHighest[i]].adjustableStand
+
+                // Create the results of recommended monitors
                 let recoDiv = document.createElement("DIV")
                 recoStyle = recoDiv.classList.add("recommendation_item")
-                recoDiv.innerHTML = "<img src='images/" + recoModel + ".jpg' height=200px>" + "<a href='monitors/" + recoModel + ".html' target='_blank'><h1>" + recoModelName + "</h1></a>" + "<div class='recommendation_spec_list'><p>Specifications</p><ul><li>Price: " + recoModelPrice + "</li><li>Use case: " + recoModelUseCase + "</li><li>Resolution: " + recoModelRes + "</li><li>Screen Size: " + recoModelSize + "</li><li>Refresh rate: " + recoModelRR + "</li><li>Adjustable Stand: " + recoModelAS + "</li></ul></div>" 
+                // Show image of the monitor, link to the page of the monitor, brief specification list of the monitor
+                recoDiv.innerHTML = "<img src='images/" + recoModel + ".jpg' height=200px>" + "<a href='monitors/" + recoModel + ".html' target='_blank'><h1>" + recoModelName + "</h1></a>" + "<div class='recommendation_spec_list'><p>Specifications</p><ul><li>Price: " + recoModelPrice + "</li><li>Use Case: " + recoModelUseCase + "</li><li>Resolution: " + recoModelRes + "</li><li>Screen Size: " + recoModelSize + "</li><li>Refresh rate: " + recoModelRR + "</li><li>Adjustable Stand: " + recoModelAS + "</li></ul></div>" 
                 recommendations.appendChild(recoDiv)
             }
-            search_form.reset()
+            search_form.reset() // Form resets after completing
         }
     }
     xhr.send();

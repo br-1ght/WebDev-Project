@@ -44,22 +44,30 @@
         <h1>Feedback</h1>
         <div >
             <form method="GET" id="feedback_form">
+            
+            <div class="feedback_form_field">
+                <label for="Name">Name</label><br>
+                <input type="text" name="Name" id="Name" required><br>
+            </div>
 
-            <label for="Name">Name</label><br>
-            <input type="text" name="Name" id="Name" required><br>
+            <div class="feedback_form_field">
+                <label for="Email">Email</label><br>
+                <input type="email" name="Email" id="Email" required><br>
+            </div>
 
-            <label for="Email">Email</label><br>
-            <input type="email" name="Email" id="Email" required><br>
-
+            <div class="feedback_form_field">
             <label for="reason">Select Feedback Reason</label><br>
             <select name="reason" id="reason" required>
                 <option value="improve_website">Improve the website</option>
                 <option value="request_monitor">Request a monitor to be added</option>
                 <option value="other">Other</option>
             </select><br>
+            </div>
 
+            <div class="feedback_form_field">
             <label for="suggestion">Write your feedback here</label><br>
-            <textarea name="suggestion" id="suggestion" cols="50" rows="20" required></textarea><br>
+            <textarea name="suggestion" id="suggestion" cols="50" rows="20" required></textarea>
+            </div>
 
             <button type="submit" id="feedback_submit">Submit</button>
             </form>
