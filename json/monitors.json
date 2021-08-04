@@ -57,7 +57,7 @@
         "screenSize": "27 inches",
         "adjustableStand": "No",
         "price": "S$469",
-        "refreshRate": "144 Hz"
+        "refreshRate": "165 Hz"
     },
     {
         "model": "Dell-S2721DS",
@@ -67,7 +67,7 @@
         "screenSize": "27 inches",
         "adjustableStand": "Yes",
         "price": "S$489",
-        "refreshRate": "144 Hz"
+        "refreshRate": "75 Hz"
     },
     {
         "model": "LG-27UL600-W",
@@ -77,7 +77,7 @@
         "screenSize": "27 inches",
         "adjustableStand": "No",
         "price": "S$499",
-        "refreshRate": "144 Hz"
+        "refreshRate": "60 Hz"
     },
     {
         "model": "ViewSonic-XG2705",
