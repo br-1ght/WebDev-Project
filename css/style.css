@@ -551,7 +551,6 @@ input[type="radio"], input[type="checkbox"] {
     padding: 5px;
 }
 
-
 #feedback_submit {
     display: block;
     margin: 10px auto 10px auto;
@@ -591,4 +590,3 @@ input[type="radio"], input[type="checkbox"] {
 .copyright {
    margin-right: 40px; 
 }
-

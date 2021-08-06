@@ -15,9 +15,11 @@
 <body>
 
 <header class="header">
+    <!--Site Logo-->
     <div class="site_logo"><img src="images/misc/site_logo.png" alt="Site Logo" width="96" height="96"></div>
     <div class="site_name"><h1>DisplayFinder</h1></div> 
 
+    <!--Navigation bar-->
     <div class="navigation">
         <nav>
         <ul>
@@ -29,6 +31,7 @@
         </nav>
     </div>
 
+    <!--Dark Mode Switch-->
     <div class="switch_container">
         <label class="switch">
             <p>Dark Mode</p>
@@ -40,13 +43,16 @@
 
 <div class="container">
     <div class="layout">
+        <!--Alert box to alert users about the monitor guide-->
         <div class="info_alert">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
             New to monitors and don't know which options to pick? <a href="monitor_terms_explained.html" style="color: white;">Click on this guide which can help you to consider what features you want in a monitor.</a>
         </div>
         <h1>Search for your desired monitor here!</h1>
+        <!--Monitor Search Form-->
         <div id="finder_form">
             <form>
+            <!--Budget Fieldset-->
             <fieldset>
             <legend>Budget</legend>
             <div class="form_elements">
@@ -61,6 +67,7 @@
             </div>
             </fieldset>
 
+            <!--Use Case Fieldset-->
             <fieldset>
             <legend>Use Case</legend>
             <div class="form_elements">
@@ -71,6 +78,7 @@
             </div>
             </fieldset>
 
+            <!--Resolution Fieldset-->
             <fieldset>
             <legend>Resolution</legend>
             <div class="form_elements">
@@ -83,6 +91,7 @@
             </div>
             </fieldset>
 
+            <!--Screen Size Fieldset-->
             <fieldset>
             <legend>Screen Size</legend>
             <div class="form_elements">
@@ -95,6 +104,7 @@
             </div>
             </fieldset>
 
+            <!--Adjustable Stand Fieldset-->
             <fieldset>
             <legend>Do you need an adjustable stand?</legend>
             <div class="form_elements">
@@ -105,10 +115,12 @@
             </div>
             </fieldset>
 
+            <!--Search Button-->
             <input type="button" onclick="monitor_search()" value="Search" id="search_button">
             </form>
         </div>
 
+        <!--Recommendation results-->
         <h2>Recommendations</h2>
         <div id="recommendations">
 
@@ -116,6 +128,7 @@
     </div>
 </div>
 
+<!--Footer-->
 <footer class="footer">
     <div class="footer_layout">
         <div class="copyright">

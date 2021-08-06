@@ -68,7 +68,7 @@ function monitor_search() {
                }
                /* Match count numbers for each use case have these values so that match results are distinguishable
                e.g any monitor that has a match count of 100+ is a work monitor, 200+ is gaming monitor and 300+ is both a gaming and work monitor */
-               for (j = 0; j < userChoiceObj.useCase.length; j++) { 
+               for (j = 0; j < userChoiceObj.useCase.length; j++) {  
                    if (userChoiceObj.useCase[j] === monitorData[i].useCase[j] && monitorData[i].useCase[j] === "Work") {
                        matchCount += 100;
                    }
@@ -94,7 +94,7 @@ function monitor_search() {
             }
             // Get suitable results
             let highestMatch = Math.max.apply(null, matches); // Find the number of the highest match count
-            let indexesOfHighest = []; // Since there could be multiple monitors that can have the highest match count, store the index in an array
+            let indexesOfHighest = []; // Since there could be multiple results that can have the highest match count, store the indexes of the results in an array
             for (i=0; i< matches.length; i++) {
                 if (matches[i] === highestMatch) {
                     indexesOfHighest.push(i);
